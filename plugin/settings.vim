@@ -12,3 +12,5 @@ let &showbreak=''
 
 set ignorecase
 set smartcase
+
+set spell spelllang=en_us,de
