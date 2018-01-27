@@ -13,6 +13,9 @@ nnoremap <Leader>m :silent make<CR>
 
 let g:mapleader=' '
 
+" Open "FZF".
+nnoremap <Leader><Leader> :Files<CR>
+
 " Close buffer.
 nnoremap <silent> <Leader>q :bd<CR>
 

@@ -1,4 +1,11 @@
-let g:hacking_plugins = ['vim-commentary', 'vim-sleuth']
-
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-abolish'
+Plug 'roxma/nvim-completion-manager'
+Plug 'SirVer/ultisnips'
+Plug 'ap/vim-buftabline'
+Plug 'tpope/vim-sleuth'
+Plug 'Raimondi/delimitMate'
