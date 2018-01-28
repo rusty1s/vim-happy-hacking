@@ -9,9 +9,6 @@ if empty(glob(s:plug_file))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-let s:bundle_dir = s:config_dir . '/bundle'
-call plug#begin(s:bundle_dir)
-Plug 'rusty1s/vim-happy-hacking'
-call plug#end()
-call hacking#init(s:bundle_dir)
+let &rtp .= ',' . s:config_dir . '/vim-happy-hacking'
+call hacking#init(s:config_dir . '/bundle')
 ```
