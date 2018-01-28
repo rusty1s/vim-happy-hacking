@@ -1,4 +1,4 @@
-" Remap "j/k" to "gj/gk" only without a count.
+" Remap j/k to gj/gk only without a count.
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
@@ -11,7 +11,7 @@ nnoremap q: :q
 " Map make command.
 nnoremap <silent> <Leader>m :silent make<CR>
 
-" Open "FZF".
+" Open FZF.
 nnoremap <Leader><Leader> :Files<CR>
 
 " Close buffer.

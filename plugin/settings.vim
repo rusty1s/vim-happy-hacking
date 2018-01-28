@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 set clipboard=unnamedplus
 set hidden
 set noswapfile
