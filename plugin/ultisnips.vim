@@ -1,5 +1,5 @@
 let s:config_dir=fnamemodify($MYVIMRC, ':h')
-let g:UltiSnipsSnippetsDir=s:config_dir . 'vim-happy-hacking/ultisnips'
+let g:UltiSnipsSnippetsDir=s:config_dir . 'vim-happy-hacking/UltiSnips'
 let g:UltiSnipsEditSplit='vertical'
 
 nnoremap <Leader>u :UltiSnipsEdit<CR>
