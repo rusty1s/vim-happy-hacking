@@ -1,5 +1,5 @@
 function! window#move(key) abort
-  let t:curwin = winnr()
+  let t:curwin=winnr()
   exec 'wincmd ' . a:key
   if (t:curwin == winnr())
     " We haven't moved, so we create a new window.

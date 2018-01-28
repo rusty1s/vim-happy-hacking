@@ -3,6 +3,7 @@ set hidden
 set noswapfile
 set number relativenumber numberwidth=3
 set noshowcmd
+set colorcolumn=+1,+2
 
 set list listchars=tab:\ ,trail:
 
