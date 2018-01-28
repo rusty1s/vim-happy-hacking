@@ -1,3 +1,5 @@
+let g:mapleader=' '
+
 " Remap "j/k" to "gj/gk" only without a count.
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
@@ -11,22 +13,20 @@ nnoremap q: :q
 " Map make command.
 nnoremap <Leader>m :silent make<CR>
 
-let g:mapleader=' '
-
 " Open "FZF".
 nnoremap <Leader><Leader> :Files<CR>
 
 " Close buffer.
-nnoremap <silent> <Leader>q :bd<CR>
+nnoremap <Leader>q :bd<CR>
 
 " Move between or create new windows.
-nnoremap <silent> <Leader>h :call window#move('h')<CR>
-nnoremap <silent> <Leader>j :call window#move('j')<CR>
-nnoremap <silent> <Leader>k :call window#move('k')<CR>
-nnoremap <silent> <Leader>l :call window#move('l')<CR>
+nnoremap <Leader>h :call window#move('h')<CR>
+nnoremap <Leader>j :call window#move('j')<CR>
+nnoremap <Leader>k :call window#move('k')<CR>
+nnoremap <Leader>l :call window#move('l')<CR>
 
 " Resize windows.
-nnoremap <silent> <Leader>H :vertical resize +5<CR>
-nnoremap <silent> <Leader>J :resize -5<CR>
-nnoremap <silent> <Leader>K :resize +5<CR>
-nnoremap <silent> <Leader>L :vertical resize -5<CR>
+nnoremap <Leader>H :vertical resize +5<CR>
+nnoremap <Leader>J :resize -5<CR>
+nnoremap <Leader>K :resize +5<CR>
+nnoremap <Leader>L :vertical resize -5<CR>
