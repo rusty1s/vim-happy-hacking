@@ -15,6 +15,7 @@ function! hacking#init() abort
   Plug 'junegunn/fzf.vim'
   Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': './install.sh' }
   Plug 'SirVer/ultisnips'
+  Plug 'w0rp/ale'
 
   Plug 'tpope/vim-sleuth'
   Plug 'tpope/vim-surround'
