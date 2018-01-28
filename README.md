@@ -1,12 +1,11 @@
 # Happy Hacking
 
 ```vim
-let mapleader=' '
+let g:mapleader=' '
 
 " Add this plugin to the runtimepath.
 let s:config_dir=fnamemodify($MYVIMRC, ':h')
-let &rtp .= ',' . s:config_dir . '/vim-happy-hacking'
+let &runtimepath .= ',' . s:config_dir . '/vim-happy-hacking'
 
-" Initialize.
 call hacking#init()
 ```
