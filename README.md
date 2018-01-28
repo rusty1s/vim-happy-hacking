@@ -5,5 +5,6 @@
 let s:config_dir = fnamemodify($MYVIMRC, ':h')
 let &rtp .= ',' . s:config_dir . '/vim-happy-hacking'
 
+" Initialize.
 call hacking#init()
 ```
