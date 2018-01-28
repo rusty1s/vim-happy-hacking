@@ -11,22 +11,22 @@ nnoremap <CR> o<Esc>
 nnoremap q: :q
 
 " Map make command.
-nnoremap <Leader>m :silent make<CR>
+nnoremap <silent> <Leader>m :silent make<CR>
 
 " Open "FZF".
 nnoremap <Leader><Leader> :Files<CR>
 
 " Close buffer.
-nnoremap <Leader>q :bd<CR>
+nnoremap <silent> <Leader>q :bd<CR>
 
 " Move between or create new windows.
-nnoremap <Leader>h :call window#move('h')<CR>
-nnoremap <Leader>j :call window#move('j')<CR>
-nnoremap <Leader>k :call window#move('k')<CR>
-nnoremap <Leader>l :call window#move('l')<CR>
+nnoremap <silent> <Leader>h :call window#move('h')<CR>
+nnoremap <silent> <Leader>j :call window#move('j')<CR>
+nnoremap <silent> <Leader>k :call window#move('k')<CR>
+nnoremap <silent> <Leader>l :call window#move('l')<CR>
 
 " Resize windows.
-nnoremap <Leader>H :vertical resize +5<CR>
-nnoremap <Leader>J :resize -5<CR>
-nnoremap <Leader>K :resize +5<CR>
-nnoremap <Leader>L :vertical resize -5<CR>
+nnoremap <silent> <Leader>H :vertical resize -5<CR>
+nnoremap <silent> <Leader>J :resize +5<CR>
+nnoremap <silent> <Leader>K :resize -5<CR>
+nnoremap <silent> <Leader>L :vertical resize +5<CR>

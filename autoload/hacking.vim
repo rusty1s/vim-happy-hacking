@@ -1,5 +1,6 @@
 function! hacking#init(dir) abort
   call plug#begin(a:dir)
+
   Plug 'roxma/nvim-completion-manager'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
@@ -15,5 +16,6 @@ function! hacking#init(dir) abort
 
   Plug 'ap/vim-buftabline'
   Plug 'mhinz/vim-signify'
+
   call plug#end()
 endfunction
