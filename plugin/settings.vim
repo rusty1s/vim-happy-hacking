@@ -3,7 +3,7 @@ scriptencoding utf-8
 set clipboard=unnamedplus
 set hidden
 set noswapfile
-set number relativenumber numberwidth=3
+set number relativenumber numberwidth=4
 set noshowcmd
 set colorcolumn=+1,+2
 

@@ -10,13 +10,13 @@ syntax reset
 " |     0 |   1 |     2 |      3 |    4 |       5 |    6 |     7 |
 " +-------+-----+-------+--------+------+---------+-----+--------+
 
-hi LineNr ctermfg=0
+hi LineNr ctermfg=8
 hi CursorLineNr ctermfg=4 cterm=bold
 hi ColorColumn ctermbg=0
 
 hi Include ctermfg=4
 hi Constant ctermfg=3
-hi Comment ctermfg=0 cterm=italic
+hi Comment ctermfg=8 cterm=italic
 hi Statement ctermfg=5
 
 hi SignColumn ctermbg=none
