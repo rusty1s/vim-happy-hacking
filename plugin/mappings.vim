@@ -1,3 +1,6 @@
+" Clear search highlighting.
+nnoremap <C-L> :nohlsearch<CR><C-L>
+
 " Remap j/k to gj/gk only without a count.
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
@@ -28,3 +31,5 @@ nnoremap <silent> <Leader>H :vertical resize -5<CR>
 nnoremap <silent> <Leader>J :resize +5<CR>
 nnoremap <silent> <Leader>K :resize -5<CR>
 nnoremap <silent> <Leader>L :vertical resize +5<CR>
+
+nnoremap <Leader>sv :source $MYVIMRC<CR>

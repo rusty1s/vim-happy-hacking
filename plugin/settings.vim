@@ -25,3 +25,5 @@ set softtabstop=2
 " Spaces > Tab.
 set expandtab
 set shiftwidth=0
+
+colorscheme happy-hacking-dark
