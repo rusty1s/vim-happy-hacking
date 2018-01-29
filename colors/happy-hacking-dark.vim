@@ -15,9 +15,9 @@ hi CursorLineNr ctermfg=4 cterm=bold
 hi ColorColumn ctermbg=0
 
 hi Include ctermfg=4
-hi Constant ctermfg=1
+hi Constant ctermfg=3
 hi Comment ctermfg=0 cterm=italic
-hi Statement ctermfg=3
+hi Statement ctermfg=5
 
 hi SignColumn ctermbg=none
 hi ALEErrorSign ctermfg=1 ctermbg=none
@@ -29,7 +29,7 @@ hi SignifySignChangeDelete ctermbg=none ctermfg=1
 hi SignifySignDeleteFirstLine ctermbg=none ctermfg=1
 
 " " Status line.
-" hi StatusLine ctermbg=8 ctermfg=7 cterm=reverse
+hi StatusLine ctermbg=0 ctermfg=7 cterm=bold
 " hi StatuslineNC ctermbg=8 ctermfg=7 cterm=none
 " hi User1 ctermbg=7 ctermfg=8
 " hi User2 ctermbg=7 ctermfg=8 cterm=bold
