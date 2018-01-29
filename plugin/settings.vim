@@ -11,7 +11,7 @@ set list listchars=tab:\ ,trail:
 
 set linebreak
 set breakindent
-let &showbreak=''
+let &showbreak='…'
 
 set ignorecase
 set smartcase
