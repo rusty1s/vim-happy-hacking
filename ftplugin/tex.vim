@@ -7,7 +7,11 @@ setlocal foldtext=TexFoldText()
 function! TexFold(lnum) abort
   let l:line = getline(a:lnum)
 
-  if l:line =~? '^\s*\\end{document}\s*$'
+  if l:line =~? '^\s*\\end{document}'
+    return '0'
+  endif
+
+  if l:line =~? '^\s*\\bibliography'
     return '0'
   endif
 
