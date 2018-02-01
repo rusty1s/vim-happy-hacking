@@ -6,36 +6,52 @@ endglobal
 snippet chapter "Chapter" b
 \chapter{${1:Chapter name}}
 \label{cha:`!p snip.rv = to_camel_case(t[1])`}
-
-${0}
 endsnippet
 
 snippet section "Section" b
 \section{${1:Section name}}
 \label{sec:`!p snip.rv = to_camel_case(t[1])`}
-
-${0}
 endsnippet
 
 snippet subsection "Subsection" b
 \subsection{${1:Subsection name}}
 \label{sub:`!p snip.rv = to_camel_case(t[1])`}
-
-${0}
 endsnippet
 
 snippet subsubsection "Subsubsection" b
 \subsubsection{${1:Subsubsection name}}
 \label{ssub:`!p snip.rv = to_camel_case(t[1])`}
-
-${0}
 endsnippet
 
 snippet paragraph "Paragraph" b
 \paragraph{${1:Paragraph name}}
 \label{par:`!p snip.rv = to_camel_case(t[1])`}
+endsnippet
 
-${0}
+snippet figure "Figure" b
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=${1:1.0}\linewidth]{${2:name.ext}}
+	\end{center}
+	\caption{%
+	${3}\label{fig:${4}}
+	}
+\end{figure}
+endsnippet
+
+snippet table "Table" b
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{${1:lc}}
+			\toprule
+			$0
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	\caption{%
+	${2}\label{tab:${3}}
+	}
+\end{table}
 endsnippet
 
 snippet label
