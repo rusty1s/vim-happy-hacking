@@ -1,17 +1,41 @@
-snippet chapter
-\chapter{${VISUAL}$1}
+global !p
+def to_camel_case(str):
+	return str.lower().replace(' ', '_')
+endglobal
+
+snippet chapter "Chapter" b
+\chapter{${1:Chapter name}}
+\label{cha:`!p snip.rv = to_camel_case(t[1])`}
+
+${0}
 endsnippet
 
-snippet section
-\section{${VISUAL}$1}
+snippet section "Section" b
+\section{${1:Section name}}
+\label{sec:`!p snip.rv = to_camel_case(t[1])`}
+
+${0}
 endsnippet
 
-snippet subsection
-\subsection{${VISUAL}$1}
+snippet subsection "Subsection" b
+\subsection{${1:Subsection name}}
+\label{sub:`!p snip.rv = to_camel_case(t[1])`}
+
+${0}
 endsnippet
 
-snippet subsubsection
-\subsubsection{${VISUAL}$1}
+snippet subsubsection "Subsubsection" b
+\subsubsection{${1:Subsubsection name}}
+\label{ssub:`!p snip.rv = to_camel_case(t[1])`}
+
+${0}
+endsnippet
+
+snippet paragraph "Paragraph" b
+\paragraph{${1:Paragraph name}}
+\label{par:`!p snip.rv = to_camel_case(t[1])`}
+
+${0}
 endsnippet
 
 snippet label
@@ -20,10 +44,6 @@ endsnippet
 
 snippet usepackage
 \usepackage{${VISUAL}$1}
-endsnippet
-
-snippet paragraph
-\paragraph{${VISUAL}$1}
 endsnippet
 
 snippet item
