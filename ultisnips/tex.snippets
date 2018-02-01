@@ -54,40 +54,52 @@ snippet table "Table" b
 \end{table}
 endsnippet
 
-snippet label
-\label{${VISUAL}$1}
+snippet cite "Cite" i
+\cite{${1:AuthorYear}}
 endsnippet
 
-snippet usepackage
-\usepackage{${VISUAL}$1}
-endsnippet
-
-snippet item
+snippet item "Item" b
 \item $0
 endsnippet
 
-snippet itemize
+snippet emph "Emphasis" i
+\emph{${1:${VISUAL:Emphasis text}}}
+endsnippet
+
+snippet textbf "Bold" i
+\textbf{${1:${VISUAL:Bold text}}}
+endsnippet
+
+snippet textbf "Italic" i
+\textit{${1:${VISUAL:Italic text}}}
+endsnippet
+
+snippet label "Label" i
+\label{${1:Label id}}
+endsnippet
+
+snippet usepackage "Use package" b
+\usepackage{${1:Package name}}
+endsnippet
+
+snippet itemize "Itemize" b
 \begin{itemize}
-	${VISUAL}\item $1
+	\item $0
 \end{itemize}
 endsnippet
 
-snippet enumerate
+snippet enumerate "Enumerate" b
 \begin{enumerate}
-	${VISUAL}\item $1
+	\item $0
 \end{enumerate}
 endsnippet
 
-snippet todo
-\todo{${VISUAL}$1}
+snippet todo "Todo" i
+\todo{${1:Todo note}}
 endsnippet
 
-snippet emph
-\emph{${VISUAL}$1}
-endsnippet
-
-snippet textbf
-\textbf{${VISUAL}$1}
+snippet todolong "Todo" i
+\todo[inline]{${1:Todo note}}
 endsnippet
 
 snippet texttt
@@ -108,10 +120,6 @@ endsnippet
 
 snippet underline
 \underline{${VISUAL}$1}
-endsnippet
-
-snippet cite
-\cite{${VISUAL}$1}
 endsnippet
 
 snippet equation

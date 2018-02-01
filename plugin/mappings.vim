@@ -2,8 +2,8 @@
 nnoremap <C-L> :nohlsearch<CR><C-L>
 
 " Remap j/k to gj/gk only without a count.
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " Remap Enter to create a new line.
 nnoremap <CR> o<Esc>
