@@ -4,27 +4,27 @@ def to_camel_case(str):
 endglobal
 
 snippet chapter "Chapter" b
-\chapter{${1:Chapter name}}
+\chapter{${1:Chapter name}}%
 \label{cha:`!p snip.rv = to_camel_case(t[1])`}
 endsnippet
 
 snippet section "Section" b
-\section{${1:Section name}}
+\section{${1:Section name}}%
 \label{sec:`!p snip.rv = to_camel_case(t[1])`}
 endsnippet
 
 snippet subsection "Subsection" b
-\subsection{${1:Subsection name}}
+\subsection{${1:Subsection name}}%
 \label{sub:`!p snip.rv = to_camel_case(t[1])`}
 endsnippet
 
 snippet subsubsection "Subsubsection" b
-\subsubsection{${1:Subsubsection name}}
+\subsubsection{${1:Subsubsection name}}%
 \label{ssub:`!p snip.rv = to_camel_case(t[1])`}
 endsnippet
 
 snippet paragraph "Paragraph" b
-\paragraph{${1:Paragraph name}}
+\paragraph{${1:Paragraph name}}%
 \label{par:`!p snip.rv = to_camel_case(t[1])`}
 endsnippet
 
