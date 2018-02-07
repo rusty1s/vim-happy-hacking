@@ -5,7 +5,7 @@ set hidden
 set noswapfile
 set number relativenumber numberwidth=4
 set noshowcmd
-let &colorcolumn='+'.join(range(1, 40),',+')
+let &colorcolumn='+'.join(range(1, 110),',+')
 
 set list listchars=tab:\ ,trail:
 
