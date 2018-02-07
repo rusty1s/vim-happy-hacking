@@ -34,7 +34,7 @@ function! TexFoldText() abort
   let l:fold_line = getline(v:foldstart)
 
   if l:fold_line =~? '^\s*\\\(sub\)*section'
-    let l:pattern = '\\\(sub\)*section{\([^}]*\)}'
+    let l:pattern = '\\\(sub\)*section{\([^}]*\)}%*'
     let l:repl = '\2'
     let l:line = substitute(l:fold_line, l:pattern, l:repl, '')
   endif
