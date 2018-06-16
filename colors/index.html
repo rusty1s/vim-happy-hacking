@@ -6,41 +6,68 @@
   <title>XCode Mojave Color Scheme</title>
 
   <style>
-    .background { background: #292a2f; }
-    .foreground { background: #fcfcfd; }
-    .black      { background: #303238; }
-    .red        { background: #ee8675; }
-    .green      { background: #aad47f; }
-    .yellow     { background: #ffd044; }
-    .blue       { background: #325890; }
-    .magenta    { background: #f082b1; }
-    .cyan       { background: #9acfc3; }
-    .white      { background: #7e8892; }
+    .background { background: #292a2f; color: #292a2f; }
+    .foreground { background: #fcfcfd; color: #fcfcfd; }
+    .black      { background: #303238; color: #303238; }
+    .red        { background: #ee8675; color: #ee8675; }
+    .green      { background: #aad47f; color: #aad47f; }
+    .yellow     { background: #ffd044; color: #ffd044; }
+    .blue       { background: #325890; color: #325890; }
+    .magenta    { background: #f082b1; color: #f082b1; }
+    .cyan       { background: #9acfc3; color: #9acfc3; }
+    .white      { background: #7e8892; color: #7e8892; }
 
     body {
-      margin: 0;
+      margin: 40px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .background {
+    .scheme {
       display: flex;
       width: 700px;
       padding: 40px;
-      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
-    .background div {
+    .scheme div {
       flex-grow: 0;
       flex-shrink: 0;
       width: 60px;
       height: 300px;
       margin-right: 20px;
     }
+
+    .code {
+      width: 700px;
+      margin: 0;
+      padding: 40px;
+    }
+
+    code {
+      line-height: 1.45;
+      font-family: sans-serif;
+      font-family: "SFMono Nerd Font";
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    .bold {
+      font-weight: 500;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .code span {
+      background: none !important;
+    }
   </style>
 </head>
-<body>
-  <div class="background">
+<body class="white">
+  <div class="scheme background">
     <div class="black"></div>
     <div class="red"></div>
     <div class="green"></div>
@@ -52,8 +79,36 @@
     <div class="foreground"></div>
   </div>
 
-  <pre>
-    wadawd
-  </pre>
+  <div class="code background">
+    <code>
+      <div>
+        <span class="white">&nbsp;1</span> <span class="magenta bold">import</span> <span class="foreground">UIKit</span>
+      </div><div>
+        <span class="white">&nbsp;2</span>
+      </div><div>
+        <span class="white">&nbsp;3</span> <span class="magenta bold">class</span> <span class="foreground">MainViewController:</span> <span class="cyan">UIViewController</span> <span class="foreground">{</span>
+      </div><div>
+        <span class="white">&nbsp;4</span>
+      </div><div>
+        <span class="white">&nbsp;5</span>&nbsp;&nbsp;&nbsp;<span class="magenta bold">weak var</span> <span class="foreground">solarSystemVC:</span> <span class="green">SceneViewController</span><span class="foreground">?</span>
+      </div><div>
+        <span class="white">&nbsp;6</span>
+      </div><div>
+        <span class="white">&nbsp;7</span>&nbsp;&nbsp;&nbsp;<span class="magenta bold">override func</span> <span class="foreground">viewDidLoad() {</span>
+      </div><div>
+        <span class="white">&nbsp;8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white italic">// Initate solar system controller</span>
+      </div><div>
+        <span class="white">&nbsp;9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="magenta bold">super</span><span class="foreground">.</span><span class="cyan">viewDidLoad</span><span class="foreground">()</span>
+      </div><div>
+        <span class="white">10</span>
+      </div><div>
+        <span class="white">11</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cyan">title</span> <span class="foreground">=</span> <span class="red">"The Solar System"</span>
+      </div><div>
+        <span class="white">12</span>&nbsp;&nbsp;&nbsp;<span class="foreground">}</span>
+      </div><div>
+        <span class="white">13</span> <span class="foreground">}</span>
+      </div>
+    </code>
+  </div>
 </body>
 </html>
