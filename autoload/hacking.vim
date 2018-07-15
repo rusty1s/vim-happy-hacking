@@ -1,36 +1,37 @@
 function! hacking#init() abort
-  let s:config_dir=fnamemodify($MYVIMRC, ':h')
-  let s:plug_file=s:config_dir . '/autoload/plug.vim'
+  silent! packadd minpac
 
-  if empty(glob(s:plug_file))
-    let s:url='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    silent execute '!curl -fLo ' . s:plug_file . ' --create-dirs ' . s:url
-    augroup plug_install
-      autocmd!
-      autocmd VimEnter * PlugInstall | source $MYVIMRC
-    augroup END
+  command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
+  command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+
+  if !exists('*minpac#init')
+    let s:config_dir=fnamemodify($MYVIMRC, ':h')
+    let s:pack=s:config_dir . '/pack/minpac/opt/minpac'
+    let s:url='https://github.com/k-takata/minpac.git'
+
+    silent execute '!git clone ' . s:url . ' ' . s:pack
+    execute 'PackUpdate'
+  else
+    call minpac#init()
+
+    call minpac#add('roxma/nvim-completion-manager')
+    call minpac#add('junegunn/fzf', {
+          \ 'dir': '~/.fzf', 'do': './install --all' })
+    call minpac#add('junegunn/fzf.vim')
+    call minpac#add('SirVer/ultisnips')
+    call minpac#add('w0rp/ale')
+    call minpac#add('autozimu/LanguageClient-neovim', {
+          \ 'branch': 'next', 'do': 'bash install.sh' })
+
+    call minpac#add('tpope/vim-sleuth')
+    call minpac#add('tpope/vim-surround')
+    call minpac#add('tpope/vim-commentary')
+    call minpac#add('tpope/vim-abolish')
+    call minpac#add('tpope/vim-sleuth')
+    call minpac#add('Raimondi/delimitMate')
+
+    call minpac#add('ap/vim-buftabline')
+    call minpac#add('mhinz/vim-signify')
   endif
 
-  call plug#begin(s:config_dir . '/bundle')
-
-  Plug 'roxma/nvim-completion-manager'
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'junegunn/fzf.vim'
-  Plug 'SirVer/ultisnips'
-  Plug 'w0rp/ale'
-  Plug 'autozimu/LanguageClient-neovim', {
-  \    'branch': 'next', 'do': './install.sh'
-  \ }
-
-  Plug 'tpope/vim-sleuth'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-commentary'
-  Plug 'tpope/vim-abolish'
-  Plug 'tpope/vim-sleuth'
-  Plug 'Raimondi/delimitMate'
-
-  Plug 'ap/vim-buftabline'
-  Plug 'mhinz/vim-signify'
-
-  call plug#end()
 endfunction
