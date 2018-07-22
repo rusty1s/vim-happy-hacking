@@ -1,3 +1,5 @@
+setlocal makeprg=open\ %<.pdf
+
 setlocal norelativenumber
 
 setlocal foldmethod=expr
