@@ -14,7 +14,16 @@ function! hacking#init() abort
   else
     call minpac#init()
 
-    call minpac#add('roxma/nvim-completion-manager')
+    call minpac#add('roxma/nvim-yarp')
+    call minpac#add('ncm2/ncm2')
+    call minpac#add('ncm2/ncm2-bufword')
+    call minpac#add('ncm2/ncm2-tmux')
+    call minpac#add('ncm2/ncm2-path')
+    call minpac#add('ncm2/ncm2-jedi')
+    call minpac#add('ncm2/ncm2-pyclang')
+    call minpac#add('ncm2/ncm2-vim')
+    call minpac#add('ncm2/ncm2-ultisnips')
+
     call minpac#add('junegunn/fzf', {
           \ 'dir': '~/.fzf', 'do': './install --all' })
     call minpac#add('junegunn/fzf.vim')
