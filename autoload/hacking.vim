@@ -2,7 +2,7 @@ function! hacking#init() abort
   silent! packadd minpac
 
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
-  command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+  command! PackClean packadd minpac  | source $MYVIMRC | call minpac#clean()
 
   if !exists('*minpac#init')
     let s:config_dir=fnamemodify($MYVIMRC, ':h')
