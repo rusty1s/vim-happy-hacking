@@ -41,6 +41,7 @@ function! hacking#init() abort
     call minpac#add('tpope/vim-commentary')
     call minpac#add('tpope/vim-abolish')
     call minpac#add('Raimondi/delimitMate')
+    call minpac#add('godlygeek/tabular')
 
     call minpac#add('ap/vim-buftabline')
     call minpac#add('mhinz/vim-signify')
