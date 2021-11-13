@@ -4,7 +4,7 @@ function! hacking#init() abort
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
   command! PackClean packadd minpac  | source $MYVIMRC | call minpac#clean()
 
-  if !exists('*minpac#init')
+  if !exists('g:loaded_minpac')
     let s:config_dir=fnamemodify($MYVIMRC, ':h')
     let s:pack=s:config_dir . '/pack/minpac/opt/minpac'
     let s:url='https://github.com/k-takata/minpac.git'
