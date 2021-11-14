@@ -14,6 +14,8 @@ function! hacking#init() abort
   else
     call minpac#init()
 
+    call minpac#add('ojroques/vim-oscyank')
+
     call minpac#add('roxma/nvim-yarp')
     call minpac#add('ncm2/ncm2')
 
