@@ -50,5 +50,7 @@ function! hacking#init() abort
 
     call minpac#add('ap/vim-buftabline')
     call minpac#add('mhinz/vim-signify')
+
+    call minpac#add('github/copilot.vim')
   endif
 endfunction
