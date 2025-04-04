@@ -1,6 +1,5 @@
 let g:colors_name='happy-hacking-dark'
 set background=dark
-set notermguicolors
 
 highlight clear
 syntax reset
