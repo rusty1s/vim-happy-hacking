@@ -52,6 +52,9 @@ function! hacking#init() abort
     call minpac#add('ap/vim-buftabline')
     call minpac#add('mhinz/vim-signify')
 
+    call minpac#add('sindrets/diffview.nvim')
+    call minpac#add('nvim-tree/nvim-web-devicons')
+
     " call minpac#add('github/copilot.vim')  " License expired :(
   endif
 endfunction
